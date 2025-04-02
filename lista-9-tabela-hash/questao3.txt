@@ -1,0 +1,1 @@
+Sim, essa implementação é legal, mas ineficiente. Todos os objetos terão o mesmo hash (17), o que causará colisões em HashMap e HashSet. Isso piora o desempenho dos Hashs de O(1) para O(n), tornando a estrutura pouco eficiente.

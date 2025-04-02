@@ -1,0 +1,23 @@
+1) A resposta para essa questão é a D. Isso porque, nessa alternativa:
+O 2 é raiz;
+7 é maior que 2, então é colocado no filho direito do 2;
+3 é maior que 2, mas menor que 7, então é colocado no filho esquerdo do 7;
+8 é maior que 2 e maior que 7, logo é colocado no filho direito de 7 e não passa pelo nó com valor 3.
+Complexidade da questão 1:
+A complexidade dessa questão é O(n), pois é necessário passar no pior caso por todos os nós dispostos na alternativa uma vez para saber se a sequência está correta ou não.
+
+2) Complexidade da questão 2:
+A complexidade da questão 2 é igual a O(n²). Isso porque para cada item do vetor, é chamado o método put que insere o item em outra chamada recursiva, como se fossem dois loops: Um para passar para o próximo item do vetor e o outro para inserir esse item do vetor na árvore.
+
+3) Complexidade da questão 3:  
+A complexidade da questão 3 é O(h), sendo h a altura da árvore. Isso porque o tamanho da pilha de chamadas será igual a altura da árvore.
+
+4) Complexidade da questão 4:
+A complexidade da questão é O(n), pois é necessário verificar todos os itens da árvore sequencialmente caso ela seja degenerada para retirar o item.
+
+
+5) Complexidade da questão 5:
+A complexidade da questão 3 é O(h), com h sendo a altura da árvore, pois o tamanho da pilha de chamadas será igual a altura da árvore.
+
+6) Complexidade da questão 6: 
+O(n), com n sendo o número de nós da árvore. Cada nó só é visitado uma vez, então as alturas não são calculadas múltiplas vezes.

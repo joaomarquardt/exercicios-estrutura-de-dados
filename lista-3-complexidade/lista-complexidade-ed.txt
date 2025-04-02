@@ -1,0 +1,48 @@
+Nome: João Marquardt
+
+Questão 1) Diga a ordem de complexidade de cada um dos trechos de código a seguir:
+
+a) O programa a é de complexidade O(n+m), pois são duas iterações separadas que vão de 0 a N e a M.
+
+b) O programa b roda (N² / 2) vezes. Desconsiderando a constante, é encontrada a complexidade O(n²) para o programa.
+
+c) O loop externo tem complexidade O(n) e o interno tem complexidade O(log n), então a multiplicação dos dois e, consequentemente a complexidade do programa ao todo, é O(n log n).
+
+
+Questão 2) Assuma que cada uma das expressões abaixo represente o tempo de processamento T(n) gasto por um algoritmo para resolver um problema cuja entrada possui tamanho n. Diga o termo dominante e a complexidade justa Big-Oh em cada expressão. 
+
+a) Termo dominante: 0.001n^5 | O(): O(n^5)
+b) Termo dominante: 50nlog10n | O(): O(n log n)
+c) Termo dominante: 2.5n^1.75 | O(): O(n^1.75)
+d) Termo dominante: n^2 log2 n | O(): O(n^2 log n)
+e) Termo dominante: os dois termos crescem de forma equivalente | O(): (n log n)
+f) Termo dominante: 3 log8 n | O(): O(log n)
+g) Termo dominante: 0.01n^2 | O(): O(n^2)
+h) Termo dominante: 100n^2 | O(): O(n^2)
+i) Termo dominante: 0.5n^1.25 | O(): O(n^1.25)
+j) Termo dominante: n (log2 n)^2 | O(): O(n(log n)^2)
+k) Termo dominante: n^3 | O(): O(n^3)
+l) Termo dominante: 0.003log4n | O(): O(log n)
+
+Questão 3) A seguir estão três implementações usando lógicas diferentes para realizar a tarefa de
+encontrar um elemento em um vetor ordenado. Diga qual a complexidade de cada método e
+explique como chegou a ela. 
+
+i) A complexidade nessa implementação é O(n). Isso porque no pior caso a iteração dentro do método vai acessar todas as posições do vetor uma vez, sendo n o tamanho desse vetor.
+
+ii) Assim como o primeiro item, a complexidade na implementação do item ii) é igual a O(n). Os dois utilizam a mesma lógica de busca, com diferença apenas no tipo de iteração implementada (while e for), mas que resulta no fim na mesma coisa.
+
+iii) O terceiro item implementa uma busca binária, que é um algoritmo ótimo para resolver buscas em vetores ordenados. Este tipo de algoritmo reduz pela metade o tamanho da entrada a cada iteração realizada até encontrar o elemento que deseja ou a condição de parada ser verdadeira (no programa seria chegar ao fim do vetor). O número de vezes, então, que o loop vai executar é igual a log2 n. Nesses casos a complexidade é igual a O(log n).
+
+4) Resposta no zip.
+
+5) O método selectionSort possui dois loops aninhados. O loop externo percorre o vetor de 0 até n-1. Portanto, esse loop é O(n), visto que repete n vezes. O loop interno percorre uma sublista que começa de j+1 até n-1. Ou seja, significa que o número de iterações do loop interno diminui uma vez conforme j (loop externo) aumenta, mas no geral também possui complexidade O(n), pois repete cerca de n vezes o loop a cada iteração do loop externo. Devido ao fato que o número de repetições diminui a cada fim de iteração, pode-se dizer que há uma progressão aritmética, pois:
+
+(n - 1) + (n - 2) + ... + 1 = (n(n-1)) / 2
+
+
+n - 1 -> primeira iteração
+n - 2 -> segunda iteração
+e assim por diante.
+
+Fazendo a distributiva, temos que n(n-1) / 2 é igual a (n² - n) / 2. Tirando a constante e o termo de menor dominância, é encontrada a complexidade O(n²).

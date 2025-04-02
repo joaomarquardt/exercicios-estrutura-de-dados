@@ -1,0 +1,42 @@
+1)
+a) Comparação:
+Na árvore binária de busca (ABB), é possível perceber que a árvore não está balanceada. A altura dela é h = 4, sendo que há poucos nós.
+Além disso, a complexidade dela é O(n) pois no pior caso teremos que passar por basicamente todos os nós para encontrar determinada chave.
+Na árvore rubro-negra, a árvore tende a ser balanceada por conta de suas características e condições. A altura da árvore desenhada é h = 2, metade do que foi visto na de busca.
+Ela é muito mais eficiente, e portanto sua complexidade é menor, sendo igual a O(log n). 
+
+b) Comparação:
+Na ABB ela também não está balanceada. A altura é h = 4.
+Na árvore rubro-negra, a árvore está bem mais balanceada. A altura é h = 3 e quase pôde ser considerada como uma árvore cheia. Os caminhos para acessar os últimos nós são menores que na ABB.
+
+c) Comparação:
+Por último, a ABB é uma árvore degenerada, a pior estrutura de árvores possível. A altura dela é h = 6 e tem uma complexidade O(n).
+Enquanto isso, na árvore rubro-negra, apesar de ser uma inserção unilateral (apenas para a direita), o que complica na eficiência de forma geral, a árvore rubro-negra ficou também bem mais eficiente, tendo metade da altura, com uma complexidade O(log n).
+
+2) a) A árvore do item a) não é rubro-negra pois não há balanceamento dos nós pretos. Isso pode ser observado nesse caso ao contar a quantidade de nós pretos no lado esquerdo e direito da raiz. No lado esquerdo há dois nós (raiz e folhas). Já no lado direito há 4 nós pretos (raiz, 77, 50 e folhas).
+
+b) A árvore é rubro-negra pois satisfaz as principais condições de uma árvore rubro-negra:
+Cada nó é vermelho ou preto (Nesse caso todos são pretos);
+A raiz da árvore é preta;
+Nenhum nó vermelho possui filho vermelho (Não há nós vermelhos);
+Todos caminhos de um nó até a folha tem a mesma quantidade de nós pretos;
+As folhas são pretas;
+Portanto, é rubro-negra.
+
+c) É rubro-negra pois também satisfaz as condições de uma árvore rubro-negra, apesar de não parecer estar perfeitamente balanceada (por conta dos nós consecutivos à esquerda, por exemplo 39 -> 21 -> 11).
+
+!!!! (As questões 3, 4 e 5 estão com comentário '// Questão x' para ajudar a encontrar no código) !!!!
+
+Complexidades:
+Questão 3:
+A complexidade da implementação na questão 3 é O(h) (ou também O(log n)), sendo h a altura, pois o método alturaNegra() necessita percorrer até a folha para contar a quantidade de nós pretos no caminho.
+
+Questão 4:
+A complexidade é O(h), pois, apesar de inserirmos uma forma de buscar o último nó acessado em tempo constante O(1), ainda assim a variável que armazena o último nó acessado pode não ter o mesmo valor do Nó que estamos buscando no momento, o que implica em buscar o nó até chegar às folhas.
+
+Questão 5: 
+Tanto o método isRed() (modificado para a questão) quanto o trocarFilhos (criado para a questão) são em tempo constante, pois possuem poucas instruções, sem nenhuma iteração ou recursão.
+
+Questão 6:
+A complexidade em uma árvore 2-3 para os métodos é O(log n), pois é um tipo de árvore balanceada.
+	

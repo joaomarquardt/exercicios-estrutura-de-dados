@@ -1,0 +1,7 @@
+1) Heap é um tipo de estrutura de dados baseada em árvore, onde cada pai é maior (menor) ou igual aos seus filhos. Um exemplo de uma heap é a heap binária máxima abaixo, com a maior chave estando acima das menores:
+
+[#, 36, 14, 28, 11, 9, 6, 12]]
+
+O filho da posição i é 2*i e (2*i) + 1. No vetor exemplificado, a posição 1 (36) tem os filhos na posição 2 (2*1) e na posição 3 (2*1) + 1, tendo os valores 14 e 28, respectivamente.
+
+6) Está no PNG anexado.

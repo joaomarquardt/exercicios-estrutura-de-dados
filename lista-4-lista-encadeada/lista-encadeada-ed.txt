@@ -1,0 +1,10 @@
+Nome: João Marquardt
+
+1) A complexidade do método tamanho() presente na classe Lista é O(n). Isso porque ele faz uma iteração passando por todos os itens presentes na lista uma vez. Sim, é possível melhorá-lo. No zip enviado, há adições (comentadas com // Questão 1) nos métodos insere() e remove() que incrementam e decrementam o atributo 'tamanho' da lista, este também criado para melhorar a complexidade do método tamanho(). Dessa forma, o método retornará o valor do atributo tamanho em vez de percorrer toda a lista, saindo de O(n) para O(1).
+
+2) A questão 2 está dentro do package listaSingular, na classe ListaOrdenada e comentada com // Questão 2
+
+3 em diante) Dentro do package questaoN
+
+
+
